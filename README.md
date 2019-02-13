@@ -8,7 +8,7 @@
 
 #### Creation du namespace :
 ```shell
-  $ kubectl create -f deploy/volume.yaml
+  $ kubectl create -f deploy/namespace.yaml
 ```
 
 #### Creation du volume persistant :
@@ -20,7 +20,7 @@
 
 #### Deployement (installation) de jenkins :
 ```shell
-  $ helm install --name jenkins-dev-01 -f helm/values_2.yaml stable/jenkins --namespace jenkins-dev-01
+  $ helm install --name jenkins-dev-01 -f helm/values.yaml stable/jenkins --namespace jenkins-dev-01
   $ minikube service jenkins-dev-01 --namespace jenkins-dev-01
 ```
 
